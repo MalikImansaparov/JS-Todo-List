@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Native JS | Todo App</title>
+        <meta charset="UTF-8"/>
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel="stylesheet">
+        <link  rel="stylesheet" href="style.css" media="screen">
+    </head>
+    <body>
+         <header class="header">
+      <img class="header__img" src="./eisenhower-matrix.jpg" alt="Eisenhower Matrix picture">
+      <a class="header__info" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </header>
+    <main>
+      <div class="container">
+        <section class="new-task">
+          <label class="section_title new-task__title" for="new-task">Add Item</label>
+          <div class="new-task__wrapper">
+            <input id="new-task" class="new-task__input" type="text">
+            <button class="btn btn-add">Add</button>
+          </div>
+        </section>
+        <section>
+          <h3 class="section_title">Todo</h3>
+          <ul id="incomplete-tasks" class="task-list task-list__incomplete">
+            <li class="task-list__item">
+              <input class="task-list__checkbox" type="checkbox">
+              <label class="task-list__title task-list__label">Make calculator in JS</label>
+              <input class="task-list__title task-list__input" type="text">
+              <button class="btn btn-edit">Edit</button>
+              <button class="btn btn-delete">
+                <img class="btn-delete__img" src="./remove.svg" alt="remove button icon">
+              </button>
+            </li>
+            <li class="task-list__item">
+              <input class="task-list__checkbox" type="checkbox">
+              <label class="task-list__title task-list__label">Make portfolio website</label>
+              <input class="task-list__title task-list__input" type="text" value="Go Shopping" >
+              <button class="btn btn-edit">Edit</button>
+              <button class="btn btn-delete">
+                <img class="btn-delete__img" src="./remove.svg" alt="remove button icon">
+              </button>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3 class="section_title">Completed</h3>
+          <ul id="completed-tasks" class="task-list task-list__complete">
+            <li class="task-list__item">
+              <input class="task-list__checkbox" type="checkbox" checked>
+              <label class="task-list__title task-list__label">learn DOM manipulation</label>
+              <input type="text" class="task-list__title task-list__input">
+              <button class="btn btn-edit">Edit</button>
+              <button class="btn btn-delete">
+                <img class="btn-delete__img" src="./remove.svg" alt="remove button icon">
+              </button>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </main>
+        <script src="app.js"></script>
+    </body>
+</html>
